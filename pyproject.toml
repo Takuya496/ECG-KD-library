@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "ecg_kd"
+version = "0.1.0"
+description = "ECG感情認識 Knowledge Distillation ライブラリ（②③④⑤⑥）"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "scikit-learn",
+    "torch",
+    "momentfm",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ecg_kd*"]
